@@ -4,10 +4,6 @@ def test_empty_board_has_no_winner():
     board = xogame.board.Board()
     assert board.winner() is None
 
-# a b c
-# d e f
-# g h i
-
 def test_board_with_three_X_in_top_row_has_winner_X():
     board = xogame.board.Board()
     board.place('X', 'a')
